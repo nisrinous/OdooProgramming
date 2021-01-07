@@ -15,9 +15,10 @@ File-file dependensi ini terdiri dari beberapa package python yang diperlukan un
 4. Lakukan `sudo dpkg -i nama_file.deb`
 5. Apabila terdapat dependensi yang belum terpenuhi, lakukan `sudo apt --fix-broken install xfonts-75dpi xfonts-base xfonts-encodings xfonts-utils`
 6. Lakukan kembali `sudo dpkg -i nama_file.deb` setelah *missing dependencies* sebelumnya telah terpenuhi
-6. Setelah selesai, buat shortcut untuk **wkhtmltopdf** dan **wkhtmltoimage** dengan menjalankan
-- `sudo ln -s /usr/local/bin/wkhtmltopdf /usr/bin`
-- `sudo ln -s /usr/local/bin/wkhtmltoimage /usr/bin`
+7. Setelah selesai, buat shortcut untuk **wkhtmltopdf** dan **wkhtmltoimage** dengan menjalankan:
+`sudo ln -s /usr/local/bin/wkhtmltopdf /usr/bin`
+`sudo ln -s /usr/local/bin/wkhtmltoimage /usr/bin`
+
 
 **wkhtmltopdf** dan **wkhtmltoimage** sendiri digunakan pada Odoo untuk membangun report dalam bentuk PDF dari  yang dibentuk dari 
 
@@ -25,7 +26,11 @@ File-file dependensi ini terdiri dari beberapa package python yang diperlukan un
 
 ### Install from Yenthe
 Cara installasi ini menggunakan metode dari Yenthe. Script Yenthe ini biasa digunakan untuk development, sumber yang di ambil dari repository Odoo langsung.
+
+
 `Kelebihan: setiap keperluan Odoo telah disiapkan dalam satu perintah instalasi`
+
+
 Sumber: [Yenthe666](https://github.com/Yenthe666/InstallScript)
 
 1. Jalankan `sudo wget https://raw.githubusercontent.com/Yenthe666/InstallScript/14.0/odoo_install.sh`
