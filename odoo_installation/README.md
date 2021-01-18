@@ -20,7 +20,8 @@ File-file dependensi ini terdiri dari beberapa package python yang diperlukan un
 `sudo ln -s /usr/local/bin/wkhtmltoimage /usr/bin`
 
 
-**wkhtmltopdf** dan **wkhtmltoimage** sendiri digunakan pada Odoo untuk membangun report dalam bentuk PDF dari  yang dibentuk dari 
+**wkhtmltopdf** dan **wkhtmltoimage** digunakan pada Odoo untuk membangun report dalam bentuk PDF dari melakukan render pada file XML. Versi wkhtmltopdf yang tersedia di repository Ubuntu tidak mendukung tampilan header dan footer sehingga tidak digunakan sebagai dependensi langsung. Oleh karena itu, instalasi harus dilakukan secara manual.
+ 
 
 ## Odoo
 
